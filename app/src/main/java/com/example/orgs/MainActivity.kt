@@ -2,14 +2,17 @@ package com.example.orgs
 
 import android.app.Activity
 import android.os.Bundle
-import android.os.PersistableBundle
+import android.view.View
+import android.widget.TextView
 import android.widget.Toast
+import org.w3c.dom.Text
+
 
 class MainActivity : Activity() {
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
-        val view = View(this)
-        setContentView(view)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
     }
+
 }
